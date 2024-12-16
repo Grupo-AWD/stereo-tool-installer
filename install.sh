@@ -23,7 +23,10 @@ curl -OL https://github.com/fastfetch-cli/fastfetch/releases/latest/download/fas
 
 echo 'Downloading Stereo Tool...'
 curl -OL https://www.stereotool.com/download/stereo_tool_gui_jack_64 \
+    && sudo chmod a+x stereo_tool_gui_jack_64
     && sudo mv stereo_tool_gui_jack_64 /usr/local/bin/stereo-tool-jack
+
+echo 'Downloading Stereo Tool...'
 sudo cp ./assets/stereo-tool-jack.desktop /usr/share/applications/stereo-tool-jack.desktop
 sudo cp ./assets/stereo-tool-jack.png /usr/share/icons/hicolor/48x48/apps/stereo-tool-jack.png
 sudo cp ./assets/stereo-tool-jack.svg /usr/share/icons/hicolor/scalable/apps/stereo-tool-jack.svg
